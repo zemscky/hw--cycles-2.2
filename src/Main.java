@@ -9,11 +9,25 @@ public class Main {
             double precent = contribution * 0.07;
             contribution = contribution + precent;
             i++;
-            if (i % 5 == 0) {
+            if (i % 6 == 0) {
                 System.out.println(i + " месяц, накопления составляют: " + String.format("%.2f", contribution) + " рублей");
             }
         }
         System.out.println("Всего понадобиться " + i + " месяцев");
 
+
+        //        Задание 3
+        System.out.println("Задание 3");
+        double deposit = 15_000;
+        // 9 лет = 108 месяцев
+        int f = 0;
+        while (f <= 108) {
+            double interestRate = deposit * 0.07;
+            deposit = deposit + interestRate;
+            f++;
+            if (f % 6 == 0) {
+                System.out.println(f + " месяц, накопления составляют: " + String.format("%.2f", deposit) + " рублей");
+            }
+        } System.out.println("Всего понадобиться " + f + " месяцев");
     }
 }
