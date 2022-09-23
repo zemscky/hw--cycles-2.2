@@ -29,5 +29,10 @@ public class Main {
                 System.out.println(f + " месяц, накопления составляют: " + String.format("%.2f", deposit) + " рублей");
             }
         } System.out.println("Всего понадобиться " + f + " месяцев");
-    }
+        //        Задание 4
+        System.out.println("Задание 4");
+        for(int friday = 5;friday <= 31;friday += 7) {
+            System.out.println("Сегодня пятница, " +friday+ "-е число. Необходимо подготовить отчет.");
+        }
+        }
 }
