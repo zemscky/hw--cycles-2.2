@@ -7,17 +7,13 @@ public class Main {
         int i = 0;
         while (contribution <= 12_000_000) {
             double precent = contribution * 0.07;
-            contribution = contribution + precent ;
+            contribution = contribution + precent;
             i++;
             if (i % 5 == 0) {
-                System.out.println(i + " месяц, накопления составляют: " + String.format("%.2f", contribution) + " рублей" );
+                System.out.println(i + " месяц, накопления составляют: " + String.format("%.2f", contribution) + " рублей");
             }
         }
         System.out.println("Всего понадобиться " + i + " месяцев");
 
-            }
-        }
-
     }
-
 }
