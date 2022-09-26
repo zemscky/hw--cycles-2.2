@@ -4,31 +4,31 @@ public class Main {
 //        Задание 1,2
         System.out.println("Задание 1,2");
         double contribution = 15_000; // Вклад
-        int i = 0;
-        while (contribution <= 12_000_000) {
-            double precent = contribution * 0.07;
-            contribution = contribution + precent;
-            i++;
-            if (i % 6 == 0) {
-                System.out.println(i + " месяц, накопления составляют: " + String.format("%.2f", contribution) + " рублей");
+        int month = 0;
+        int accumulate = 12_000_000;
+        double precent = 0.07;
+        while (contribution <= accumulate) {
+            double percentageOfTheAmount = contribution * 0.07;
+            contribution = contribution + percentageOfTheAmount;
+            month++;
+            if (month % 6 == 0) {
+                System.out.println(month + " месяц, накопления составляют: " + String.format("%.2f", contribution) + " рублей");
             }
         }
-        System.out.println("Всего понадобиться " + i + " месяцев");
-
-
+        System.out.println("Всего понадобиться " + month + " месяцев");
         //        Задание 3
         System.out.println("Задание 3");
-        double deposit = 15_000;
-        // 9 лет = 108 месяцев
-        int f = 0;
-        while (f <= 108) {
-            double interestRate = deposit * 0.07;
-            deposit = deposit + interestRate;
-            f++;
-            if (f % 6 == 0) {
-                System.out.println(f + " месяц, накопления составляют: " + String.format("%.2f", deposit) + " рублей");
-            }
-        } System.out.println("Всего понадобиться " + f + " месяцев");
+        double contribution1 = 15_000;
+        int timeOfAccumulation = 9 * 12;
+        int month1 = 0;
+        while (month1 <= timeOfAccumulation) {
+            double interestRate = contribution1 * precent;
+            contribution1 = contribution1 + interestRate;
+            if (month1 % 6 == 0) {
+                System.out.println(month1 + " месяц, накопления составляют: " + String.format("%.2f", contribution1) + " рублей");
+            } month1++;
+        } System.out.println("Всего понадобиться " + month1 + " месяцев");
+
         //        Задание 4
         System.out.println("Задание 4");
         for(int friday = 5;friday <= 31;friday += 7) {
